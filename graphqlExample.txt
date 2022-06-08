@@ -1,0 +1,61 @@
+
+#Encontrar todas as pessoas com seus pets
+# query {
+#  findAllPeople{
+#    id,
+#    name
+#   pets {
+#     id
+#     name
+#   }
+#   }
+# }
+
+#Buscar todos os pets e seus donos
+# query{
+#   findAllPets{
+#     id,
+#     name,
+#     owner {
+#       id
+#       name
+#     }
+#   }
+# }
+
+#Buscar por Id da pessoa
+# query {
+#  findPersonById(id:1){
+#    id,
+#    name,
+#    age
+#   }
+# }
+
+#Criar Pessoa
+# mutation($person:PersonInput){
+#   savePerson(person:$person) {
+#     id
+#     name
+#     age
+#     gender
+#   }
+# }
+
+#Criar Pet
+# mutation($pet:PetInput){
+#   savePet(pet:$pet) {
+#     id
+#     name
+# 	}
+# }
+
+#Atualizar idade da pessoa
+# mutation{
+#   updateAge(id:1, age: 30) {
+#     id
+#     name
+#     age
+#     gender
+#   }
+# }
